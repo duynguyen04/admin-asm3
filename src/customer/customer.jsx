@@ -48,7 +48,7 @@ const Customer = () => {
   };
   let socket;
   useEffect(() => {
-    socket = io("https://server-nodejs-shop.glitch.me/", {
+    socket = io("https://server-asm3.glitch.me", {
       withCredentials: true,
       extraHeaders: {
         "my-custom-header": "abcd",

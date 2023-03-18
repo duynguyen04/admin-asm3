@@ -1,10 +1,12 @@
 import React from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
+import axiosClient from "../API/axiosClient";
 
 const Header = () => {
   const onRedirect = () => {
     localStorage.clear();
+    axiosClient.post("/logout");
   };
   return (
     <header>
